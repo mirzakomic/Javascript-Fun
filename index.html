@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#Multiplikator">Multiplizieren</a>
+            <a href="#Geburtsjahr">Geburtsjahr</a>
+            <a href="#Altersdiff">Altersdifferenz</a>
+            <a href="#counter">Counter</a>
+            <a href="#klassen">Klassen</a>
+        </nav>
+    </header>
+    <div class="wrapper">
+    <section id="Multiplikator">
+    <form onsubmit="machWas(); return false">
+    <div class="wrap_inp">
+        <input class="num_input" type="number">
+        <button type="submit" class="calc">x 2</button>
+        <span class="ergebnis"></span>
+    </div>
+    <label for="mynum"><p>Zahl eingeben</p></label>
+    </form>
+</section>
+
+<section id="Geburtsjahr">
+<form onsubmit="alterBerechnen(); return false">
+    <div class="wrap_inp2">
+        <label for="gjahr"><p>Gib dein Geburtsjahr ein:</p></label>
+        <input class="jahr" type="number">
+    </div>
+    <div class="alterergebnis"></div>
+<button class="calc2" type="submit">Berechne dein Alter</button>
+</form>
+</section>
+
+<section id="Altersdiff">
+    <form onsubmit="differenzBerechnen(); return false">
+        <div class="wrap_inp2">
+            <label for="erstesjahr"><p>Gib das erste Alter ein:</p></label>
+            <input class="jahr1" type="number">
+            <label for="erstesjahr"><p>Gib das zweite Alter ein:</p></label>
+            <input class="jahr2" type="number">
+        </div>
+        <div class="differgebnis"></div>
+    <button class="calc2" type="submit">Berechne die Differenz</button>
+    </form>
+    </section>
+
+    <section id="counter">
+
+        <p class="counterlive"></p>
+
+        <div class="btn-cont">
+
+            <button onclick="addOne(1)" class="btn-count" type="submit">+1</button>
+
+            <button onclick="addOne(-1)" class="btn-count" type="submit">-1</button>
+
+            <button onclick="addOne(+10)" class="btn-count">+10</button>
+
+            <button onclick="addOne(-10)" class="btn-count" >-10</button>
+
+            <button onclick="addOne(+100)" class="btn-count" >+100</button>
+
+            <button onclick="addOne(-100)" class="btn-count" >-100</button>
+
+            <button onclick="resetAll()" class="btn-count" ><b>Reset</b></button>
+
+            <button onclick="multiplyAll()" class="btn-count" ><b>* 2</b></button>
+
+        </div>
+    </section>
+
+    <section id="klassen">
+        <h3>Das ist eine Headline</h3>
+        <button class="calc3"  onclick="changeH3()">Headline ändern</button>
+        
+        <button class="calc3" onclick="resetH3()">Headline zurücksetzen</button>
+        <a href="#top" class="gototop top">⬆</a>
+    </section>
+</div>
+    <script type="text/javascript" src="./assets/js/main.js"></script>
+</body>
+</html>
